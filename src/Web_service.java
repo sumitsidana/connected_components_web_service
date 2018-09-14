@@ -99,7 +99,8 @@ public class Web_service {
 						}
 						System.out.println(num_connected_components);
 			            OutputStream os = t.getResponseBody();
-			            os.write(num_connected_components);
+			            String response = num_connected_components+"";
+			            os.write(response.getBytes());
 			            os.close();
 
 
