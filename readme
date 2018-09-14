@@ -1,5 +1,7 @@
-On Unix like systems, having java 8
+Tested on Unix like systems, having java 8
 
+
+Once inside src folder:
 
 javac -cp ./javaee-api-8.0.jar:./json-simple-1.1.jar Web_service.java
 java -cp javaee-api-8.0.jar:json-simple-1.1.jar:. Web_service

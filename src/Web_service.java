@@ -98,10 +98,10 @@ public class Web_service {
 							}
 						}
 						System.out.println(num_connected_components);
-			            OutputStream os = t.getResponseBody();
-			            String response = num_connected_components+"";
-			            os.write(response.getBytes());
-			            os.close();
+						OutputStream os = t.getResponseBody();
+						String response = num_connected_components+"";
+						os.write(response.getBytes());
+						os.close();
 
 
 					} catch (ParseException e) {
