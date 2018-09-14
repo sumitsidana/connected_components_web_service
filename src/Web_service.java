@@ -2,6 +2,7 @@
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
+import java.io.OutputStream;
 import java.io.PrintStream;
 import java.net.InetSocketAddress;
 import java.util.Iterator;
@@ -97,6 +98,9 @@ public class Web_service {
 							}
 						}
 						System.out.println(num_connected_components);
+			            OutputStream os = t.getResponseBody();
+			            os.write(num_connected_components);
+			            os.close();
 
 
 					} catch (ParseException e) {
